@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="id"><head><meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Katalog Kain Bandung</title>
+<style>
+*{box-sizing:border-box}body{margin:0;font-family:Arial;background:#fdf8f3}
+header{background:#7a2e2e;color:#fefb9bef;padding:22px;text-align:center}
+header p{opacity:.85;font-size:16px}
+input{width:92%;display:block;margin:14px auto;padding:12px;border-radius:10px;border:1px solid #ddd}
+.grid{display:grid;grid-template-columns:1fr 1fr;gap:12px;padding:0 12px 20px}
+.card{background:#fff;border-radius:14px;overflow:hidden;box-shadow:0 3px 10px rgba(0,0,0,.08)}
+.card img{width:100%;height:130px;object-fit:cover}
+.isi{padding:10px}.isi h3{font-size:14px;margin:0}
+.isi p{font-size:12px;color:#666666;margin:4px 0}
+.harga{color:#7a2e2e;font-weight:bold}
+.btn{display:block;background:#25D366;color:#fff;text-align:center;padding:9px;border-radius:8px;text-decoration:none;margin-top:8px;font-size:13px;font-weight:bold}
+footer{text-align:center;color:#999;font-size:12px;padding:15px}
+</style></head><body><header><h1>Toko KHARISMA Textile</h1><p>•• Sedia berbagai macam jenis kain ••</p></header>
+
+<input id="cari" placeholder="Cari kain... katun / satin" onkeyup="f()">
+<div class="grid" id="list">
+<div class="card"><img src="maxmara-batik.jpeg"><div class="isi"><h3>Maxmara motif Batik</h3><p>Halus dengan kilau yang lembut dan mewah, sangat jatuh dan tidak kaku</p><div class="harga">Rp 28.000 /m</div><a class="btn" href="https://wa.me/6283843653291?text=Mau%20pesan%20Maxmara%20Batik">Pesan WA</a></div></div>
+<div class="card"><img src="shakila.jpeg"><div class="isi"><h3>Shakila Twill</h3><p>Adem dan lembut tidak mudah kusut, daya serap keringat yg cukup baik</p><div class="harga">Rp 22.000 /m</div><a class="btn" href="https://wa.me/6283843653291?text=Mau%20pesan%20Shakila%20Twill">Pesan WA</a></div></div>
+<div class="card"><img src="satin-velvet.jpeg"><div class="isi"><h3>Satin Velvet</h3><p>Halus dan licin disisi luar, kilau yang lembut berkesan mewah yang elegan</p><div class="harga">Rp 25.000 /m</div><a class="btn" href="https://wa.me/6283843653291?text=Mau%20pesan%20Satin%20velvet">Pesan WA</a></div></div>
+<div class="card"><img src="woolpeach.jpeg"><div class="isi"><h3>Woolpeach dyeing</h3><p>Lembut dengan serat yang rapat dan ringan dengan efek jatuhan kain yang anggun</p><div class="harga">Rp 26.000 /m</div><a class="btn" href="https://wa.me/6283843653291?text=Mau%20pesan%20Woolpeach%20dyeing">Pesan WA</a></div></div>
+<div class="card"><img src="woolpeach-printing.jpeg"><div class="isi"><h3>Woolpeach Printing</h3><p>Halus, lembut cukup tebal namun ringan, tidak mudah kusut dan motif terlihat tajam </p><div class="harga">Rp 30.000 /m</div><a class="btn" href="https://wa.me/6283843653291?text=Mau%20pesan%20Woolpeach%20printing">Pesan WA</a></div></div>
+<div class="card"><img src="semiwool.jpg"><div class="isi"><h3>Semiwool</h3><p>Lembut, tebal tapi terasa lebih ringan, tidak mudah kusut cocok untuk mobilitas tinggi, memberi kesan rapi, profesional dan mewah</p><div class="harga">Rp 48.000 /m</div><a class="btn" href="https://wa.me/6283843653291?text=Mau%20pesan%20Semiwool">Pesan WA</a></div></div>
+<div class="card"><img src="rayon-printing.jpg"><div class="isi"><h3>Rayon printing</h3><p>Lembut, adem dan nyaman cocok untuk dipakai sehari-hari</p><div class="harga">Rp 27.000 /m</div><a class="btn" href="https://wa.me/6283843653291?text=Mau%20pesan%20Rayon%20printing">Pesan WA</a></div></div>
+<div class="card"><img src="ceruty-babydoll.jpeg"><div class="isi"><h3>Ceruty Babydoll</h3><p>Tekstur seperti kulit jeruk yang halus, ringan dan efek jatuh yang indah, tipis dan cenderung transfarn sehingga membutuhkan tambahan kain furing didalam nya</p><div class="harga">Rp 20.000 /m</div><a class="btn" href="https://wa.me/6283843653291?text=Mau%20pesan%20Ceruty%20Babydoll">Pesan WA</a></div></div>
+     
+</div>
+<footer>Katalog Kain Bandung</footer>
+<script>
+function f(){let v=document.getElementById('cari').value.toLowerCase();document.querySelectorAll('.card').forEach(c=>{c.style.display=c.innerText.toLowerCase().includes(v)?'block':'none'})}
+</script></body></html>
